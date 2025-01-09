@@ -1,15 +1,7 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layout.app')
 
-    <title>Home</title>
-    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.10.2/dist/cdn.min.js" defer></script>
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
-</head>
-<body>
-<!-- Ele permite que o elemento saiba e lembre de informações (como números ou seleções) e responda automaticamente às suas ações, sem precisar recarregar a página.  -->
+@section('title', 'Home')
+@section('content')
     <div class="container mt-5" x-data="{ selected: [] }">
         <h1 class="text-center mb-4">Selecione as Perguntas</h1>
 
@@ -52,7 +44,4 @@
             </div>
         </form>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+@endsection 
