@@ -17,7 +17,7 @@
 <body class="d-flex flex-column min-vh-100">
     <header>
         <div class="bg-white shadow p-3">
-            <h1 class="btn m-2">Home</h1>
+            <a href="{{ route('home') }}" class="btn m-2">Home</a>
             <div class="position-absolute top-3 end-0">
                 <a href="{{ route('login') }}" class="btn btn-outline-primary m-2">Login</a>
                 <a href="{{ route('home') }}" class="btn btn-outline-secondary m-2">Register</a>
@@ -25,7 +25,7 @@
         </div>
     </header>
 
-    <main class="flex-grow-1">
+    <main class="root flex-grow-1">
         @yield('content')
     </main>
 
