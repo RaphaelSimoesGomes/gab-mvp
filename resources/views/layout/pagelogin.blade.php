@@ -15,15 +15,10 @@
     @vite(["resources/css/app.css", "resources/js/app.js"])
 </head>
 <body class="d-flex flex-column min-vh-100">
-    <header>
-        <div class="bg-white shadow p-3 d-flex justify-content-center align-items-center">
-            <a href="{{ route('home') }}" class="btn m-2">Home</a>
-            <div class="position-absolute top-3 end-0">
-                <a href="{{ route('login') }}" class="btn btn-outline-primary m-2">Login</a>
-                <a  href="{{ route('register') }}" class="btn btn-outline-secondary m-2">Register</a>
-            </div>
-        </div>
-    </header>
+<div class="d-flex justify-content-center align-items-center p-3">
+
+    <a href="{{ route('home') }}" class="btn m-2">Home</a>
+</div>
 
     <main class="root flex-grow-1">
         @yield('content')
